@@ -1,0 +1,19 @@
+.link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+.blok {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+.voteAverage {
+  text-align: center;
+}
