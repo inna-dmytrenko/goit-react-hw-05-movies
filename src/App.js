@@ -22,7 +22,14 @@ const MovieDetailsPageView = lazy(() =>
 const NotFountMovie = lazy(() =>
   import('./views/NotFountMovie.js' /* webpackChunkName: "404-view" */),
 );
-
+let str = "How can mirrors be real if our eyes aren't real";
+String.prototype.toJadenCase = function () {
+  return str.replace(/(^|\s)\S/g, function (a) {
+    return a.toUpperCase();
+  });
+};
+console.log(str.toJadenCase());
+// "How Can Mirrors Be Real If Our Eyes Aren't Real"
 function App() {
   return (
     <Container>
